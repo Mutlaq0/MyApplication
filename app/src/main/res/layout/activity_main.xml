@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4e7fe7"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Parent Profile"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="610dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:orientation="vertical"
+        android:background="@drawable/myrect"
+
+        android:elevation="2dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="My Kids"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Lorem ipsom dollar sit map"
+
+            android:textColor="#6F000000"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:id="@+id/layout_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="303dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/buttonslayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+
+
+                    <ImageView
+                        android:id="@+id/boy_image"
+                        android:layout_width="140dp"
+                        android:layout_height="85dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <ImageView
+                        android:id="@+id/girl_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_weight="1"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/names_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/boy_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="155dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="Ibrahim" />
+
+                    <TextView
+                        android:id="@+id/girl_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_weight="1"
+                        android:text="Lena" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="My Bills"
+
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Ibrahim and Lena have participated in X activities with Y \n events. \n You are now paying  Z for their current activities per month. " />
+
+                <Button
+                    android:id="@+id/billsbutton"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="#4e7fe7"
+                    android:text="My Bills"
+                    app:backgroundTint="#4e7fe7" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="322dp"
+            android:layout_height="216dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/details_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/details_text"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginLeft="15dp"
+                android:text="My Details"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:layout_marginLeft="15dp"></ListView>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="120dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="100dp"
+                android:text="Edit Info"
+                android:textColor="#000000"
+                app:backgroundTint="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>
